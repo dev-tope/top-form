@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="l-col">
+            <div class="l-box">
+                <div class="logo-div">
+                    <div class="logo-img">
+                    </div>
+                    <div class="logo-title">
+                        <h1>BITCOLUD</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="r-col">
+            <div class="form-info">
+                <h2>
+                    This is not a real online service! You know you need something like this
+                    in your life to help you realize your deepest dreams. Sign up now to get started. 
+                    <br>
+                    You know you want to!
+                </h2>
+            </div>
+
+            <div class="form-container">
+
+                <form action="https://httpbin.org/post" method="POST" id="my-form">
+                    <div class="input-div move">
+                        <label for="firstName">First Name</label>
+                        <input class="inputs" type="text" name="firstName" id="firstName" required> 
+                    </div>
+                    <div class="input-div move">
+                        <label for="phonenum">Phone Number</label>
+                        <input class="inputs" type="tel" name="phoneNumber" id="phonenum" placeholder="+2347062623311" required>
+                    </div>
+                    <div class="input-div move">
+                        <label for="password">Password</label>
+                        <input class="inputs" type="password" name="password" id="password" required>
+                    </div>
+                    <div class="input-div">
+                        <label for="lastName">Last Name</label>
+                        <input class="inputs" type="lastName" name="lastName" id="lastName" required>
+                    </div>
+                   
+                    <div class="input-div">
+                        <label for="email">Email</label>
+                        <input class="inputs" type="email" name="email" id="email" placeholder="johndoe@gmail.com" required>
+                    </div>
+                    <div class="input-div">
+                        <label for="confirmpw">Confirm Password</label>
+                        <input class="inputs" type="password" name="password" id="confirmpw" required>
+                    </div>   
+                </form>
+                <div  class="btn-div">
+                    <button type="submit" form="my-form">Create Account</button>
+                    <p>Already have an account? <span>Log in</span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

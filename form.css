@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Zilla+Slab:wght@300;400&display=swap');
+
+
+
+:root {
+    font-size: 62.5%;
+    --bg-color: white;
+    --title-font: 'Electrolize', sans-serif;
+    --text-font: 'Zilla Slab', serif;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Page style*/
+
+body {
+    box-sizing: border-box;
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid blue; */
+}
+
+.l-col{
+    height: 100%;
+    width: 40%;
+    background-image: url("img/2.jpg");
+    background-repeat: no-repeat;
+    background-position:center ;
+    background-size: cover;
+    background-color: green;
+}
+
+.l-box {
+    width: 100%;
+    height: 15%;
+    background-color: rgba(1, 1, 1, 0.7);
+    position: relative;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-div{
+    height: 60%; 
+    width: 60%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+.logo-img{
+    /* background-image: url("img/3.svg"); */
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    -webkit-mask: url("img/3.svg") no-repeat center;
+    mask-size: 700%;
+    
+    /* background-color: rebeccapurple; */
+
+}
+
+.logo-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* background-color: red; */
+}
+
+.logo-title h1 {
+    font-size: 6rem;
+    font-family: var(--title-font);
+    font-weight: 700;
+    color: white;
+}
+
+.r-col {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid blue; */
+}
+
+.r-col h2 {
+    /* border: 1px solid red; */
+    width: 80%;
+    margin-left: 7rem;
+    margin-top: 7rem;
+    font-size: 2.5rem;
+    font-family: var(--text-font);
+    line-height: 1.5;
+    text-align: justify;
+
+}
+
+.form-info{
+    height: 30%;
+    width: 100%;
+    background-color: #111111;
+    color: white;
+    font-size: 2rem;
+    /* background-color: blue; */
+}
+
+.form-container {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* border: 1px solid red; */
+    
+}   
+
+form {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    /* padding: 0 7rem; */
+    box-shadow: 5px 5px 5px grey;
+    /* border: 1px solid orange; */
+}
+
+form div + div {
+    /* margin-top: 0.1em; */
+}
+
+.input-div {
+    width: 30%;
+    height: 30%;
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+
+.input-div:nth-child(1), 
+.input-div:nth-child(2),
+.input-div:nth-child(3) {
+    margin-left: 7rem;
+}
+
+.input-div:nth-child(4), 
+.input-div:nth-child(5),
+.input-div:nth-child(6) {
+    margin-left: -35rem;
+}
+
+label {
+    display: block;
+    font-size: 1.7rem;
+}
+
+.inputs {
+    height: 35%;
+    width: 68%;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 0 10px;
+}
+
+.inputs:valid{
+    border: 1px solid green;
+}
+
+.inputs:valid::after {
+    content: "&#10003";
+    position: relative;
+    top: 30%;
+    right: 50%;
+}
+
+[type="email"]:invalid {
+    border: 1px solid red;
+
+}
+
+.btn-div {
+    width: 50vw;
+    height: 10vh;
+    /* background-color: rebeccapurple; */
+    margin-top: 3rem;
+    padding: 0 7rem;
+}
+
+button {
+    width: 20%;
+    height: 55%;
+    background-color: #111111;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px gray;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+button:active{
+    box-shadow: none;
+}
+
+.btn-div p {
+    font-size: 1.7rem;
+    margin-top: 3.5rem;
+}
+
+.btn-div span {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+
+
+
